@@ -1,0 +1,19 @@
+1,Write a “person” class to hold all the details.
+
+
+class Person {
+  constructor(firstName, lastName, age, email, address) {
+    this.firstName = firstName;
+    this.lastName = lastName;
+    this.age = age;
+    this.email = email;
+    this.address = address;
+  }
+
+  toString() {
+    return `${this.firstName}  ${this.lastName},\nAge: ${this.age}\nEmail: ${this.email}\nAddress: ${this.address}`;
+  }
+}
+
+const person1 = new Person("surya", "j", 22, "jsurya@gmail.com", "123 Main St, City");
+console.log(person1.toString());
